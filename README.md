@@ -17,6 +17,6 @@ How to use
 
 1. Make sure Gudrun is installed in /opt/Gudrun4, or alternatively edit the /path/to/smt4Gudrun/gudrunGUI.sh script.
 2. Create a Sumatra repository in an empty directory with `git init` and `smt init`.
-3. Run `/path/to/smt4Gudrun/gudrunGUI.sh` from within the Sumatra repository. Use the Gudrun GUI as you would normally.
+3. Run `sh /path/to/smt4Gudrun/gudrunGUI.sh` from within the Sumatra repository. Use the Gudrun GUI as you would normally.
 4. Use `smt web` or the Sumatra command line tools to compare your results.
 
