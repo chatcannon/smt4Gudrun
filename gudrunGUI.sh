@@ -8,8 +8,8 @@ DATADIR="$(pwd)"
 ## even if $DATADIR is different, because GudrunGUI will look for 
 ## it in the current directory
 cat - > GudrunGUI.sysparN <<END
-${SMT4GUDRUN_ROOT}/bin/gudrun_dcs.py;
-${SMT4GUDRUN_ROOT}/bin/purge_det.py;
+${SMT4GUDRUN_ROOT}/gudrun_dcs.py;
+${SMT4GUDRUN_ROOT}/purge_det.py;
 ${GUDRUN_ROOT}/rungnuplot.sh;
 ${GUDRUN_ROOT}/rungnuplotplot.sh;
 ${DATADIR}/SLSstartup.txt;
