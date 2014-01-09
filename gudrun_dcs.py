@@ -47,6 +47,13 @@ print "Truncating gudrun_dcs.dat at the END marker..."
 with open('gudrun_dcs.dat', 'r+') as fid:
     fid.truncate(parameters.end)
 
+subprocess.check_call(['git', 'add', 'gudrun_dcs.dat'])
+if subprocess.call(['git', 'diff', '--staged', '--quiet', 'gudrun_dcs.dat']):
+    print "Committing gudrun_dcs.dat to git..."
+    subprocess.check_call(['git', 'reset'])
+    subprocess.check_call(['git', 'add', 'gudrun_dcs.dat'])
+    subprocess.check_call(['git', 'commit', '-m', 'Autocommit of gudrun_dcs.dat by smt_gudrun_dcs.py'])
+
 input_files = [calib_file, groups_file,
                deadtime_file, scattering_params_file, beam_params_file]
 
