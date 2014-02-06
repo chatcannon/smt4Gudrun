@@ -12,7 +12,7 @@ ${SMT4GUDRUN_ROOT}/gudrun_dcs.py;
 ${SMT4GUDRUN_ROOT}/purge_det.py;
 ${GUDRUN_ROOT}/rungnuplot.sh;
 ${GUDRUN_ROOT}/rungnuplotplot.sh;
-${DATADIR}/SLSstartup.txt;
+${DATADIR}/GEMstartup.txt;
 ;
 END
 
