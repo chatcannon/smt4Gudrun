@@ -49,6 +49,9 @@ for data, comment in parameters.parsed_lines[10:]:
     basename, one = data.split()
     input_files.append(os.path.join(rawdata_dir, basename))
 
+# Convert to absolute path names
+input_files = list(map(os.path.abspath, input_files))
+
 print "Loading project..."
 project = projects.load_project()
 project.data_store.root = output_dir

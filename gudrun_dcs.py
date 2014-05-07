@@ -59,6 +59,9 @@ input_files = [calib_file, groups_file,
 
 input_files.extend([os.path.join(rawdata_dir, data_file) for data_file in parameters.get_data_files()])
 
+# Convert to absolute path names
+input_files = list(map(os.path.abspath, input_files))
+
 print "Loading project..."
 project = projects.load_project()
 project.data_store.root = output_dir
