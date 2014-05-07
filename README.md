@@ -3,8 +3,8 @@ smt4Gudrun
 
 Helper scripts for using Sumatra with Gudrun GUI
 
-Why this project is helpful
----------------------------
+Background
+----------
 
 [Sumatra](http://neuralensemble.org/sumatra/) is "a tool for managing and tracking projects based on numerical simulation or analysis, with the aim of supporting reproducible research".
 [Gudrun](http://disordmat.moonfruit.com/) is "a data analysis package that allows the user to go from the raw scattering data obtained in neutron and x-ray scattering experiments to Differential Scattering Cross Section (DCS) and then to Pair Distribution Function (PDF)".
