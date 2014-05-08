@@ -43,7 +43,7 @@ if subprocess.call(['git', 'diff', '--staged', '--quiet', 'purge_det.dat']):
     print "Committing purge_det.dat to git..."
     subprocess.check_call(['git', 'reset'])
     subprocess.check_call(['git', 'add', 'purge_det.dat'])
-    subprocess.check_call(['git', 'commit', '-m', 'Autocommit of purge_det.dat by smt_purge_det.py'])
+    subprocess.check_call(['git', 'commit', '-m', 'Autocommit of %s/purge_det.dat by smt_purge_det.py' % os.path.basename(output_dir)])
 
 for data, comment in parameters.parsed_lines[10:]:
     basename, one = data.split()

@@ -52,7 +52,7 @@ if subprocess.call(['git', 'diff', '--staged', '--quiet', 'gudrun_dcs.dat']):
     print "Committing gudrun_dcs.dat to git..."
     subprocess.check_call(['git', 'reset'])
     subprocess.check_call(['git', 'add', 'gudrun_dcs.dat'])
-    subprocess.check_call(['git', 'commit', '-m', 'Autocommit of gudrun_dcs.dat by smt_gudrun_dcs.py'])
+    subprocess.check_call(['git', 'commit', '-m', 'Autocommit of %s/gudrun_dcs.dat by smt_gudrun_dcs.py' % os.path.basename(output_dir)])
 
 input_files = [calib_file, groups_file,
                deadtime_file, scattering_params_file, beam_params_file]
